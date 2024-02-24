@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #7E6363;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110px;
+    color: white;
+    background-color: #A87C7C;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color: #A87C7C;
+    font-size: 50px;
+}
+
+header{
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(168, 124, 124, 0.406);
+    padding: 20px;
+    font-size: 50px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main h2{
+    font-size: 110px;
+}
+
+h3{
+    text-align: center;
+    font-size: 50px;
+    background-color: #a87c7c67 ;
+    color: white;
+}
+
+
+
+.tex1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.picture1{
+    border: 2px solid black;
+} 
+
+
+
+footer{
+    background-color: #A87C7C;
+    text-align: center;
+    padding: 10px;
+}
+
+.oo{
+    text-align: center;
+}
+
+
+
+main img{
+    margin-top: 20px;
+}
+
+
+p a{
+    background-color: white;
+    padding: 4px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.df{
+    text-align: center;
+    font-size: 30px;
+}
+
+.if{
+    font-size: 20px;
+}
+
+main img{
+    width: 300px;
+}
