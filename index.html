@@ -1,42 +1,86 @@
 <html>
     <head>
-        <title>Продажа акаунтов</title>
-        <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <img src="https://wotpack.ru/wp-content/uploads/2021/06/Steam-1.jpg" class="foto">
-        <nav>
-            
-            <a href="https://store.steampowered.com/">Покупка</a>
-        </nav>
-    </header>
-    <main>
-                    <h1>Галерея</h1>
+       <link rel="stylesheet" href="./style.css">
+       <title>Logika</title>
+    </head>
+    <body>
+        <header>
+            <img src="https://cdn.pixabay.com/photo/2020/06/21/00/17/pubg-logo-5322826_1280.png">
 
-        <section class="gallery">
-<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVEhgSFRUSGRgZGBoYGBgZGBgUEhkYGBgcGRgaGBgcIS4lHB4rHxgYJjgmKy8xNTU1HCQ7QDszPy40NTEBDAwMEA8QHhISHzorISs/OjE4NDExMTY3Pz80PzY0MTo2OjQ0NDQ0NTQ0NDQ1NDE2NDY0NTQ0PTQxNDQ2NDQ2NP/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAQIDBAUGB//EAEcQAAIBAwIDBQQECwUHBQAAAAECAAMREgQhBTFBBhMiUWEycYGRFKGx0QcWIzVCUlNykrLBNGJ0guEVJDNDc9LwY4Ois8L/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIEAwX/xAAhEQEBAAICAgMBAQEAAAAAAAAAAQIRAyESQQQxUYFhIv/aAAwDAQACEQMRAD8A8ZhCEAhCLASLaEWAloWiwgJaFo6EBLQtFhAS0LRYQEtC0WEBLQtFhAS0LRYQEtC0WEBLRLR0IDYWjokBIkdEgJCLCAkWEIBFhFgJCLFgW+E0FqVkRh4WNjvb65134u6f9Q/xGctwL+00/wB7+hnbtraYYoXUMDax23Pv98yfIyylkx3/AB6/wMOK8ducn3rtiajh+jpvgwfLbYZHny5S7+Lun/UP8Ria3Sq9ZHAdgCoJUqUBVjcNc326zXnLPPKSat377a+Hgwyyy3jNS9dMLhPAaFTiDad1YoKWYF2ByuvXn1M6n8RtF+o/8b/fMns/+dm/w/8AVJnfhKrMurpgMw/IjYMR/wAx/KbuO7xlrw/kYzHlyk+t10/4i6L9Sp/G/wB85/sz2a09arqkdWIpViiWZlsoZxvbnyE1vwaOW0rkkn8s3Mkn2E847sV/x9f/AIlv5nlnF5/2l0aUdXVpICERgFBJJsVB5n3zsuFdlNK+hWuyuXNJnJzYDIA9PhOV7Z/2+v8Avj+RZ6NwH81p/wBBvsaBz/ZHstptRpEq1FcuxcEh2UeFiBsPQTb/ABE0X7Op/G/3w/B9+b6f7z/zmcrU7Fa4sSHSxJI/Kt5+6BpdrOyem0+jqVqaOHXCxLsw8Tqp2PoTL/DuxejejTqMj5NTRmObDdkBPXzM4/i3ZbV0KLVarqUXHIB2Y+Jgo2I33ImLpKzZoMntmotkbWyED1L8RdF+pU/jf75y/brs9Q01Om1FWUszBrszbAXHOdT+EFiNC5BIOabg2PtTyV6jN7TMfeSftgMhFhASEWEBIkdEMBsIsIBFgIsBIsIoEBIRYQL/AAL+00/3v6GdZW4Oj1DULtuQbCwGwA6+6chwiqqV0ZjZQ1yfIbzsf9t6f9qvyb7pl5vPy3j+PW+DOG8Vx5LPvfd0kfRYr4LZhmZWa5xL+0QBz25SvoOLqzCm2V/ZVjzYj9YD2Tzkn+3NP+1X5N90gTiGkWo1QOuTczZvjbba/WcZLZZljb+NmWWOOUvHnJPc36Xuz/52b/D/ANUnYvqaRrCixU1CmYUrc4XIve1rXBnAcH4xQTiLVnqAIaOIazWyuu1gL9DNKp2g0p4mlfvh3Y0xQtZ7ZZk42tfkZu45rGPD+TZeXKz63XTa/jGm0zBKjohYZAYncXtfwj0mB2Eqq9TWupurVyynzVmcg/IzSftVoDzr0z70c/8A5nO9lOOaajV1bPVVVesWp+FrMuT2IsNhYiXcXNdsz/v9f98fyLPRuA/mtP8AoN9jQbtRoCbmtTJ8yjk/yxmq7VaE0nRa6XKMAArjcqQB7MDh+Cds6umoLQSnSYKWN2yy8RLdD6y8fwj1/wBjQ+b/APdNHsfxzR0tGiVqlNXBe4ZGY7uSNwp6Tb/Gbh/7al/A3/ZICdvPzdV/9v8A+1Z5Lpf+In76/wAwnova/tFpa2jqU6dZXdillAcE2dSeYtyBnnWnYB0J5BlJ9wIvA9W/CJ/YH/fp/wA08kno/bTtBpq+janSrK7F0IUBwbBrnmJ5zASEWEBIRYQEgYsDAbCEIDrRbRwELQEtACOtFAgNtC0daFoFnhLotdGq44AnLJc19k2utjcXt0lynWo/TA7GkadtytErSy7rG/dEHbP03NzYcplWhaBrfSdONaahVWo2PhCYIx7m2y2GN39NucUajTjWs6qhobhQy2FimIOGDb5b+yReZFoWga1KtQGrqMGTuyrhGekGQMVsjGmqW2b+78ImenbVVjdFpOtQUzg2Clh4CFC3FvdtMq0LQNLgtSglZu9KMuDqrFMlvcYsFZGt15qbeUqM9PvKhKllOeGJCgEt4TbEbW6WHuHKQWhaKmXV21dFWoDSVEbHvSzFSVBYqVUKAxptbxBuTL74aPUUF0jo4Q1CXsDTyqHIUhTK1LeEKVqXFxz5GZVoWhDQ09SmNJUQtSzLqVBpZVMQPFjUx8NzjYXHst57xJqUGmenanmaiENgpqYYsWtUtceIJtfz6XlS0LQNFKtP6GyXpd53gIHdXq4dQKuG29j7XIEdbSXv6H0LD8n3tv2f5XLvg1+8x5YXFsvhMm0LQNZtRp/oQTFe/AHiw3N6rEgtbmFC733DW6THtHWhaA20LR1oWgNtEtH2haA20QiPtGkQG2hHWhAeFjgskCxQsCPGKFkmMXGBFhDCTYwxgQ4Qwk2MMYEWEMJNhDCBDhDCTYQwgQ4Qwk2EMIEOEMJNhDCBDhDCTYQwgQ4Qwk2EMIEOEMJNhDCBDhDCTYQwgQ4Qwk+ETCBAVjSsnKxhWBDjCSYwgThY8JHKslCwIAkXCWAkXGBXxhjLGMQpAgxhjJwsMIEGMMZOViqkCDGL3csrTkndQItPRQA1KpYIP0Ut3jnbZb3AG+7H6zNTgtRKzslPT6dAoBJqZ123Nv0tufoJBxrRdz3dMXydKbt8VDFR5AZj5SLsfXC6wrceNHUX5Eghh9SmVvbrP+WhxzSYIGelRsTjlSTunUm9iQDi3LqOvPrMbU6FkK5DZ1Dow9lkbkR8QQR0IInW9pqR7gm4IBDWHIEEbc/K8alAVuEhsfHp6xsRzFOpa4Ppk1/hETlj5duN7uGEvNRje6lnFTwiYy4aUUUoFPCGEu93GNRMCrjFCSz3UO7gVrRpWWe7jCkCuVjWWWCkjZIEGMJJjCBYQSRVioklVd7QGhY4JJ0pXlldOYGf3cGpy1VSxtJO6gZpSOVJaajvHpQgVFpXNpMull/T6beXE0d4GWKElTTkzWTRSymhgc12sQ50XJvehTAPuXAj+JGmHwOoKeqpMSLB7b3HtAgHbfYmegdouz9StpqNRMAqK6OzMFxAdnU7+17bCwnJaejSpm4R3PV2XFAOpAO/SUuUl01Y8Vyx8vTt+I0s9NUW/NG38zYkfWJV/Braoauma+FRVVrc/FdD9TfVKXDeI94i406fd25EFQQGxyG5PNTfbnOn4FrEUipSoVnUVFpv3WDMj+EgkXuV3G9hz6SPPV1p0x4pcfLccdqdAUdqbe0jFT71Nj9ki+iidZx2mlTVVXUeFmJHr5n4m5+MzTpfSdGFhNp7byIU79CPfN9tLtfaVKlC0DLNKNwljU10TY8/Ic42g+YJsR6Hy6GBA1OHdyyUg6WUt5C8DONOxjGsD0+2K7M3ONwgRud4wneSskidIDbiEZjCBKtVpPSqkeRkNMSwiwLuhqpezEi/8P8ApNilTB5FT7iDOfVJIgINwSD6bGBoV6X5Q7eQ98fTpeOwA2Fun2STSV8vaIyt87DnJaQxDNbztt8oDG0skTSySgT3ZN7m/lyPrFcWQKL3P3wH6ahkARNPT6XzEk0Glso902KFH0gUE0npGcRqLQp5sCbsFRF9t3JsEQdSSRK/avjn0UJTQA1agJF9wiDYsR15G3uM894rxypVroxLMtAeHq2THIueV25D/KOUirYyW9t3tVrK7Uu6ZFpMGDLjqCRbcMLAKrNcW68jynFOa45vU+DE/wBZp6viL1yzENhe7FiMt/JfeRKeiJJK3Iucdttyf9JTd9tVmH1jbpZ0ZrvTRKQsLNdv3nY2v9283eBu2lZhSqOWcqrYsy5spuBdTewJ+N5j6RXTEJ7SczuPff4HlLmn1CLT75S5dWYBb7EhR48Qvs2Y75bb7SmVu+nTi8MZLl9uyfXMlg6I7FS1lOCgBS22/KwO5PQy1wBPpgfDAFFviW8TXubKLXJ2M4fimvJoK3/pKl/fseXnmJ2n4KNJZV1DqbblNt2LkqWA9ygfEx5zDHeSnPMblrGei1dLbpKepoCwG1+s6vjmhwqsByPiHube3wNx8JhVqR3+udpdsTj+KUWBDL125AkW8j0jNHQZWyYjxbWJ8XpNziOmNtuezDa/1Sm1AEXNz1yvcfDykiJls1vSQahvydup2++XnW4DfOUX8Rv06QKXdRppS4UkbLApMkhdZdcStVgVbQjrRYDaZlumZzqVmHJj9ssU9c/K499heB0tNZMEnP0+IVAb5fULS/puLbgOBbzH3QNVaflLCM5Frj5D7YlFcgCDsdxLlGgeW0A01QkhXtv+lyPpf0l2mmdRRfwjcHpt9RjW0Jkul0xW69D9sDZ0Dq97dNr9PhNi6ohdiAqi7MdgAOZJ6D1mRoUCKWYgKASSdrAC5JnHcd7T1dQjKislK5UKfaffYuem36PT1lbdan6vhju/4ze2mr73U1ahDADFabeFkKhf0WUlSLlm9rryG85nS1yrsbixAvey7DlYnbb65tdnXRqj6aswWkwuS18VPIkW+yD9n6SagqtanXpC75i6iwuCGHO97bD75bHeO7Z1Kvy449eN+/X4rajUK1N8Tkb+EKQ1hf5iZwurq1rltgm4IFrZH6/rmvS4lRVWw0wvay/lGKXud2U+Ijcm1/8ARul1VN6uNOhSpuwAZ3eoiI1r3OTMAt7dd7DYS+dxvcmq547+tnabh1Tu2qXbYHJbM3MAMLjYG2282+FdnzUoojulI3YkMCKhBUZA3PvNhv74ul7Pax2706mmAi5o6VAUdj4cLrYJcDHJhbcc97Zmv4cysz6hXoOhVu8VlqK+1wVKkh2v1BAAHK5tMufFya3vX8aMeTHetJe1SaRNMKVGs7uGXZkZRYc7FunI/Cd72M49To6OjSqgJiijIgkEnnchTY++eeV62lr0AWqqtZWViWJVGX9JSuBN7dQSL+m877gGk0+roK5YkW9gllF/0jZbEi46+Uyc+FnHMct/e9r43HLK2Or4iyVUWqhutsQysrU2HTFh1BuLbc+U57U05s8G4SlEOKTFUcEMhbJC36Lp5H5TzTR8d1v0laVVaZLEgKtzdgL8g3hFrm9hNPxs5ljr8Z+XHWToeJU/ER6Af/ETIdlQDa5J26n37/8Am86jielCuSzA7Wt5bTmtQ6FztyuJpclbUVb7AbH5yrjLTgnlyjCkCArIKglp9tzYDzOwmVreJIvI5n+7uPieUB7mUNTVVeZAlTV8TZtkBXzOxPumczFjckk+sC99OT+98oTPtCA1ZIsgDSVDAsI8f3shEUGB1PZ7XKVFNjYjl6g+U6ii6CeY06oB5zb4fxsgYlcrcje3wgd5T1K2+Ms0qoJE5XRcWS/iFvrE6DTVlfcbQMztH2q7mqKaF7IQrouADggFgS6tYWNhYc7xKfaDh9dFV9Ois7hXaoECoCSAyMiCxUcyF3Mxu3+gYYakbqbo4A2Vuakn1Fx/lHnOVoIzqqKrFsrbAnnyAtIkW23+LHRhmqIlQLchATkrEEbPuCFsQbi2+20x/wDaCWCmioHUo7rcfulioPrbnE1+gq0ahp1FKOALpdTUW4BAZQb8iDM2oCDa1j8vq6Sdi9T3DMtwov7VifQG1gTHaek11Yr4M1DG+xUNuCOdtuc7bhGmpUtMhVHNRkLM+KlSxXcKzAkAXttacquoKVHRSoYGwDDw3PPbzkW67TI7nS8YU0ipcAs6s18TfYtu5Hp1HynNdreJD6WAwzp3VsbkK6gDa9hsSD9cw31LByhUKCQQouVB/u+h8vWdJw/QrqAHrtQprTFs6zYX6hFQeJ23uAAes75cnljP87Uk8bZ+9MnvEweo2kYI5JDI+KKOWwINhtz9TNClxvQm3+7MhuLtTrOjKPNL5Dy8NhF4zrKDV6aJ3rUVILs9lqViDsFpjZF2tvvuT5CQcV0KtXwWkq3Cs2Bya9QZ77e14vZ2ta1gQZwyuNq+MsdJwvthSpq+FfWbKQEqCnqri3NBdMSP3hy6w4bxik3FQ9+8JQU1dUFNe8ffdcmuxAtsdt4D8HJOn75lZCAzlcwy2NyiKxBDEeEE33LW6EyLhPDBp2RnqFlQl0TFVVXZQrMWG7GwAv6SuOOOP1NGVvuuy1FQsGLKLm85mpRCkgYi/K+8bqu0VxiLD485z2v4nkRuRv0l1FrjepxAVGtYbkcyZhLxOqD7ZI9ReM1epB2BvKbPAsanVO/tsSL3tsB8hKxgWkbNAbUkUezyMmAsI28IEAj1MZFBgTK8eHEgBi3gSuZLpvOVrx6VLQNJK9iLTX0GvZTcGc0lTeaWmrQO/wBBrFqIUcKysLMrWIIPQgzc0Wl02kovqEpU1KIWvuW2GwDG5FzYbec8zoaggixN5ua7izvpu7PVgT7kBf7VEJQditAup1lfV6s3Skj1KrHe71AwW3uGRA81FpgcYC1dQzquKs5IXyUnYG3W3OdXwbjGn0vDKlB6lVdRqENUGmrBgHAFKz2tyUcj1YXnDcQ1K+AoWLBPGSLEvk3zGIQ/Eyti+Nmq6xtRTVB+UQHLfIrlYk7BCL9QPhON4kpNVz/e5/AW385LquIeIldyRuzbte36PlY7iVdXrXqMXYi5tewCjwqFGw25AfXLK7T0q17Coptyv1+IMlbTIxupA9xt9R3maKx8/nuPlJ6Vc+krr8WmU9vVOxHZqmunarVemXNRMV8Lh6QQFkdW/QJI6c1E6ApQpp3aUqYW9yuK439bjecZ2C0hZnqnNe7VSq4ti+d1Y5cttjbrN7XaoAG0mRGV76p2v4pZcL2Ueyo9ke4chOQ4nxItcdJNr9TfrOf1TkyVDDqbG8rVtReQVXkGcCV3jEeNJjRzgT3jCYFpGXgBiExCY0wFvCMhAbFiQgOBigxkW8B8W8ZeKDAeDJKdWxkEWBq0dZyl+nqc6bjY2R23AO4wAt15M3Kc4DH06xXlvz+vb7oHTcep1MKK5saJpqaKG2KodhsObEg3J3uD0tfnNRRIBJvtNnVarKotLPJKaKnsgLdFAOB52LZHf+sytfWvdfXnI9p9KbqbAnrJ00pIuPti6hRiLG5JvHCraw8oEL6YiT6fRu3IXjatW4kumrleRjtPTs+wFKompVitTD/mFSSoU7EuuJDL6NtLvaHVqtaqilbK7qMfZsGIFvSZXZzj76ZzUDkBkZGt1yG3yax+Eg7auKeqcKbo4WtSYcilRcjy8nzX/LGyq1fU3lXUVF6X5b38/T0mX9K3jH1Bkqn123lctEZ7xsB5aBaMi3gOvC8beBMAMQxIl4CwiXhASEIQCEIQCF4QgLeLeNheA+8UGR3heBao17bWHvkdQ3N5FeF4EhbaNvGkxIDrx6taRQvAtNqiRY8vKTaziDVadJGG9JWQN1KFs1U+diz/ADmfeLeA8G0S8beF4CwvG3heA68LxsIC3heJCAXhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCED/2Q==">
-<img src="https://image.api.playstation.com/cdn/EP0238/CUSA12398_00/QABZIx8Ubf69EcsYvaiC1Zx0PPON7XvG.png">
-<img src="https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-739063-52.jpg">
-<img src="https://www.shutterstock.com/image-vector/counter-strike-cs-shooting-game-600nw-2340252615.jpg">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKOC86v02Ke-ik9Vm_PwTx09WGTgKIJaifr_ErGyAwUlmzwQp8Unc7zVxysU8-ID84MBU&usqp=CAU">
-<img src="https://store-images.s-microsoft.com/image/apps.20843.13803573923001063.feb9c6f4-c9b2-4f90-a7c8-a6931fbecc4d.1587313f-6d1c-42ab-8ff4-ccc222be7e23?h=464">
-<img src="https://upload.wikimedia.org/wikipedia/ru/6/6a/Call_of_Duty_-_Modern_Warfare_Remastered.png">
-<img src="https://image.api.playstation.com/cdn/EP0006/CUSA04013_00/pOdaFz8KxDl7wGcTtScEbYccOTQFqD8c.png">
+            <nav>
+                <a href="second.html">Доп.Функції</a>
+                 <a href="third.html">Буст рангов</a>
+                 </nav>
+                 </header>
 
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-link">
-                Доступно на
+                 <main>
+                 <section class="hero">
+                    <div class="hero-bg"></div>
+                    <div class="hero-info">
+                    <h1 class="bbn">PUBG</h1>
+                   <a href="#" class="btn">Головна Інформація</a>
+                    </div>
+                 </section>
+                 <section class="achivka">
+                    <h2 class="ach">Буст Рангов</h2>
+                    <div class="all-archive">
 
-        <img src="https://cdn-icons-png.flaticon.com/512/71/71821.png">
-        <img src="https://cdn-icons-png.flaticon.com/512/0/747.png">
-        <img src="https://free-png.ru/wp-content/uploads/2021/08/free-png.ru-8-370x370.png">
-    <img src="https://cdn-icons-png.flaticon.com/512/152/152759.png">    
 
-        </div>
-       <p> Технична Поддержка:+3807475067</p>
-    </footer>
-</body>
+                        <div class="all-archive-single">
+                          <img src="https://4pubg.com/wp-content/uploads/2018/12/PUBG-Mobile-Conqueror.png">
+                          <div class="all-archive-info">
+                            <h1 class="h1">Завоеватель</h1>
+                            <p><br>Ціна домовлена<br>
+                               <br>Замовити можна за номером<br>
+                              <br>0578357376<br>
+                            </p>
+                          </div>
+
+                        </div>
+
+
+                        <div class="all-archive-single">
+                          <img src="https://lh6.googleusercontent.com/_AqhtUWDEe_ibamq8NCtskx3I9a-MTgCOL4fv76YqRVXUCumrB0bnm_F90744d_YHW4mLw_NjWeE-dvNvhXxbq13m_NaKwNt23p29COQzq9lmk6cYrWtTl2Y4-_FCLj-C5E0dQq9=s0">
+                          <div class="all-archive-info">
+                            <h1 class="h1">Ас-доминатор</h1>
+                            <p><br>Ціна домовлена<br>
+                               <br> Замовити можна за номером<br>
+                               <br>0578357376<br>
+                            </p>
+                          </div>
+                        </div>
+
+
+
+                        <div class="all-archive-single">
+                           <img src="https://i.ibb.co/hghW2Tx/image.png">
+                           <div class="all-archive-info">
+                            <h1 class="h1">Ас-мастер</h1>
+                            <p><br>Ціна домовлена<br>
+                               <br>Замовити можна за номером<br>
+                               <br> 0578357376<br>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                 </section>
+
+
+                  <section class="text">
+                     <div>
+                        <p>
+                           Наша компанія не несе відповідальності якщо людина по приколу чи спеціально намагається обдурити наших спеціалістів і спробує зламати акаунт розробника і не зможе зайти за спеціальним особистим кодом на сам сайт, то людину пробивають по ДНС адресою і усувають акаунт від доступу платворми та блокують цей акаунт як не безпечний на даний момент. наші розробники зв'язуються з підтримкою безпеки і повідомляють розробнику який володіє цим акаунтом.
+ПРОСИМО ставитися з терпінням до того якщо наші розробники не можуть відповісти протягом 5-10 хвилин.
+                        </p>
+                     </div>
+                 </section>
+                 </main>
+
+                 <footer>
+                  <h2>Тех.Підтримка</h2>
+                  <h3>Номер телефону:0648349378</h3>
+                  <h3>Почта:RangPubg@gmail.com</h3>
+                 </footer>  
+
+    </body>
 </html>
