@@ -1,84 +1,166 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.foto{
-    width: 130px;
-    border-radius: 130px;
-}
-nav a{
-background-color:rgb(146, 146, 146);
-font-weight: 900;
-border-radius:10px ;
-color:darkred;
-padding:10px ;
-margin:30px ;
-text-decoration: none;
-border: 3px solid;
 
+header img{
+    width: 100px;
 }
 header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(95, 95, 95);
+    padding: 10px 20px
 }
-.icon-acc{
-    height: 100px;
-    width: 100px;
-    background-color: gold;
-    border: 7px double darkgoldenrod;
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
-.icon-acc{
-justify-content: center;
-display: flex;
-align-items: center;
+header a {
+    text-decoration: none;
+    color:orangered;
+    margin:0 10px ;
+    padding:5px 10px  ;
+    background-color:black ;
+    border-radius: 15px;
+    transition: .5s;
+}
+header a:hover{
+  
+    color: yellow;
+     background-color:grey ;
+     transition: .5s;
+}
+.hero{
+    /* position: relative; */
+    /* background-size:cover ; */
+    /* background-repeat: no-repeat; */
+    height: 70vh;
+    /* background-image: url("https://i.playground.ru/p/rsbGr8idTedp68V0VrET8w.jpeg"); */
+}
+.hero-bg{
+        background-image: url("https://i.playground.ru/p/rsbGr8idTedp68V0VrET8w.jpeg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    height: 100%;
+    filter: brightness(0.3);
+}
+.hero-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+.hero-info a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+main a{
+   text-decoration: none;
+    color:black;
+    margin:0 10px ;
+    padding:5px 10px  ;
+    background-color:yellow ;
+    border-radius: 15px;
+    transition: .5s;
+}  
+main a:hover{
+    color: rgb(0, 0, 0);
+     background-color:grey ;
+     transition: .5s; 
+}
+.achivka{
 
 }
-.account{
+.ach{
+    width: max-content;
+    text-align: center;
+    text-decoration: none;
+    color:orangered;
+    padding:0 10px  ;
+    background-color:black ;
+    border-radius: 15px;
+    transition: .5s;
+    display: block;
+    margin:  10px auto;
+}
+.all-archive div{
     display: flex;
 }
-ul{
-    padding-left: 20px;
+.all-archive div h3{
+    width: 100%;
 }
-.gallery{
-    padding: 50px 0;
+.all-archive-info{
     display: flex;
-    gap: 50px;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
-.gallery img {
-    width: 250px;
+.all-archive-single{
+    box-shadow: 0px 1px 40px black;
+    margin: 50px 20px;
     border-radius: 10px;
-    border: 3px solid black;
-}
-h1{
-    text-align: center;
-}
-main{
-    background-color: rgb(185, 185, 185);
-}
-.footer-link{
-display: flex;
-gap: 10px;
-justify-content:center ;
+            transition: 0.5s;
+           
 
 }
-.footer-link img{
-    width: 50px;
+.all-archive-single:hover{
+    background-color: gray;
+    color: white;
+        box-shadow: 0px 25px 40px black;
+        transition: 0.5s;
+
 }
-.footer{
+br{
+    margin-top:20px;
+    font-size: larger ;
+}
+.h1{
+
+margin-top: 20px;
+}
+footer h2{
     text-align: center;
-    font-weight: 900;
+    width: max-content;
+    text-decoration: none;
+    color:orangered;
+    padding:0 10px  ;
+    background-color:rgb(255, 255, 255) ;
+    border-radius: 15px;
+    transition: .5s;
+    display: block;
+    margin:  10px auto;
 }
+footer h3{
+    text-align: center;
+    color:orangered ; 
+    width: max-content;
+    text-decoration: none;
+    padding:0 10px  ;
+    background-color:rgb(255, 255, 255) ;
+    border-radius: 15px;
+    transition: .5s;
+    display: block;
+    margin:  10px auto;
+}
+
 footer{
-    background-color: dimgray;
-    padding: 20px;
+    padding:10px ;
+    background-color: black;
 }
-footer div{
-    align-items: center;
+footer h2:hover{
+    color: rgb(255, 255, 255);
+     background-color:grey ;
+     transition: .5s;
 }
-p{
-    padding: 20px;
+footer h3:hover{
+     color: rgb(255, 255, 255);
+     background-color:grey ;
+     transition: .5s; 
+}
+.bbn{
+    padding: 10px;
+}
+.text{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
 }
